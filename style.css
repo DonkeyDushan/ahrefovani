@@ -1,0 +1,122 @@
+body {
+    background: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1000px;
+    margin: 5% auto;
+}
+
+.nadpis {
+    text-shadow: 4px 4px 5px palevioletred;
+    text-align: center;
+    color: white;
+}
+
+p {
+    color: rgb(20, 20, 20)
+}
+
+.movingpic {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: url(original.gif);
+    background-size: auto;
+    background-attachment: unset;
+    background-position: 0%;
+    width: 80%;
+    margin: 10%;
+    font-size: 120px;
+    animation: clouds-moving infinite 20s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    text-align: center;
+}
+
+@keyframes clouds-moving {
+    0% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 0%;
+    }
+}
+
+.attribute {
+    position: relative;
+    font-size: 26px;
+    text-align: center;
+}
+
+.hranisispenisy {
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 20px 0;
+    -webkit-text-stroke: 0px rgb(255, 255, 255);
+}
+
+button {
+    font-size: 14px;
+    color: snow;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    margin: 2%;
+    border-radius: 10px;
+    background-color: #aa324a;
+    border-color: #aa324a;
+}
+
+button:hover:active {
+    background-color: #8f1f2c;
+    border-color: #8f1f2c;
+}
+
+button:hover {
+    background-color: #aa336a;
+    border-color: #aa336a;
+}
+
+input {
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    margin: 2%;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    transition: .3s border-color;
+    text-align: center;
+}
+
+input:focus {
+    border-color: tomato;
+    outline: none;
+    border-width: 1px;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+img {
+    width: 250;
+}
+
+img.hidden, p.hidden {
+    display: none;
+}
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+}
