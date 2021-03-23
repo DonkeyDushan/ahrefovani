@@ -1,9 +1,11 @@
+"use strict";
+
 const p = document.getElementById("p");
 const pp = document.getElementById("pp");
 let size = 40;
 p.onclick = () => {
   size = size + 10;
-  pp.style.fontSize = size + 'px';
+  pp.style.fontSize = size + "px";
   if (size > 80) {
     pp.style.textShadow = "0 0 20px #fff454";
   }
